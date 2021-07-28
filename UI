@@ -1,0 +1,57 @@
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        ZStack(alignment: .topLeading) {
+            
+            HStack(alignment: .top){
+                Image("Unknown")
+                 .resizable()
+                 .aspectRatio(contentMode: .fit)
+                    .frame(width: 150, height: 150, alignment: .topLeading)
+                 .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                 .shadow(radius: 7 )
+                 .overlay(Circle().stroke(Color.white, lineWidth: 4))
+                    .padding(.horizontal, 5.0)
+                    .padding(.leading, 7.0)
+                    
+                
+                HStack(alignment:.center){
+                    Text("Tripulante rojo")
+                        .font(.title)
+                        .fontWeight(.bold)
+                        
+                        
+                        
+                        
+                }
+                
+                
+                
+                
+                
+            }
+            
+            .padding(.bottom, 501.0)
+            
+            
+        
+            }
+        
+        }
+    
+}
+    
+
+
+
+
+
+
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
+
