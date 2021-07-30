@@ -1,0 +1,120 @@
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        
+        ZStack{
+            HStack(alignment: .top){
+                Image("Unknown")
+                 .resizable()
+                 .aspectRatio(contentMode: .fit)
+                    .frame(width: 150, height: 150, alignment: .topLeading)
+                 .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                 .shadow(radius: 7 )
+                 .overlay(Circle().stroke(Color.white, lineWidth: 4))
+                Spacer()
+                    .frame(width: 200, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    
+            }
+            
+            .padding(.bottom, 500)
+            HStack(alignment:.center){
+                Text("Tripulante rojo")
+                    .font(.title)
+                    .fontWeight(.bold)
+                    
+            }
+            .padding(.bottom, 600)
+            .padding(.leading, 150)
+            
+            HStack{
+                Text("Chief Executive Officer")
+                    
+            }
+            .padding(.bottom, 525)
+            .padding(.leading, 150)
+            
+            HStack{
+                Text("AmongUs Inc.")
+            }
+            .padding(.bottom, 480)
+            .padding(.leading, 85)
+            
+            HStack{
+                Text("Educación")
+                    .font(.headline)
+            }
+            .padding(.bottom, 300)
+            .padding(.trailing,230)
+            HStack{
+                Rectangle()
+                    .fill(Color.red)
+                    .frame(width: 325, height: 120, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .cornerRadius(12)
+                
+            }
+            .padding(.bottom, 150)
+            HStack{
+                Text("Licenciatura en Aeronáutica y Astronáutica")
+                    .frame(width: 300, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: .leading)
+                    .multilineTextAlignment(.leading)
+                    .foregroundColor(Color.white)
+                    .font(.subheadline)
+            }
+            .padding(.bottom, 230)
+            .padding(.trailing, 10)
+            
+            HStack{
+                Text("Polus Institue of Technology")
+                    .font(.subheadline).italic()
+                    .foregroundColor(.white)
+                
+                
+            }
+            .padding(.bottom, 180)
+            .padding(.trailing, 118)
+            
+            HStack{
+                Text("Master en Liderazgo")
+                    .font(.subheadline)
+                    .foregroundColor(.white)
+                
+            }
+            .padding(.bottom, 130)
+            .padding(.trailing, 170)
+            HStack{
+                Text("Mira National University")
+                    .font(.subheadline).italic()
+                    .foregroundColor(.white)
+                
+            }
+            .padding(.bottom, 80)
+            .padding(.trailing, 150)
+            
+            
+           
+        
+        }
+        
+       
+        
+        
+        }
+    
+}
+    
+
+    
+
+
+
+
+
+
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
+
